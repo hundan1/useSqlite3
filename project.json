@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "UseSqlite3",
+  "id": "9eaaaeab-e103-437f-8238-5ccf2bf18af6",
+  "version": "2.4.6",
+  "isNew": false
+}

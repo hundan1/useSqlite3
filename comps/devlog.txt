@@ -1,0 +1,50 @@
+20220521
+    hd-tabs组件 
+        使用 事件cc.Node.EventType.SIBLING_ORDER_CHANGED
+        调整scroll的顺序，把它header放content下面<节点顺序>，不让scroll的mask打断合批
+
+20220520
+    hd-tabs组件
+        修复删除非当前选中label后,bar未跟随当前选中的问题
+        支持value为 undefined|null，代表当前为未选中状态。值为不存在的name时也会设置成未选中的状态
+        修复初始化value有效时，label未在可视区内的问题
+        初始rPanes支持[]
+        _itemMap和_paneMap要修改
+        add tab api
+        value使用默认值时出警告
+        删除后翻页按钮判断显示隐藏
+        修复scroll重新设置大小无效的问题
+        支持双击关闭tab
+        edit tab api
+        切换tab过快致使触发双击事件。
+
+        **添加tab后，修复自动调整异常的问题。调整节点顺序不是立即调整的，直接取的pos是未调整前的pos
+            Cocos Creator 源码解读：siblingIndex 与 zIndex ----陈皮皮 https://forum.cocos.org/t/topic/118641
+        
+        
+
+
+
+20220519
+    hd-tabs组件
+        按钮翻页功能
+        点击item自动调整位置（去滚动）
+        选中item时bar移动
+        bar跟随选中的item
+        关闭按钮点击事件
+        remove tab api
+
+20220518
+    ts整理
+    comps插件整理<Creator会自动引用脚本，无需导入，它是ts 无需导入为插件>
+    hd-tabs组件
+        静态结构
+        tab点击事件
+
+20220517
+    hd-tree组件基本功能完成
+        基本树
+        手风琴
+        高亮选中
+        默认展开所有
+        节点点击事件

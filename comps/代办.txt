@@ -1,0 +1,30 @@
+1. dc优化，tab能加到上百的
+2. readme.md
+3. 可以把nodeId换成uuid
+4. 节点上自定义data想办法在一个模块中设定一个类型，不然没有ts提示太难受了
+5. 获取预制封装一下，从节点、AB包中获取
+
+hd-tree
+    bug
+
+    优化
+        长按节点显示名称
+        节点名称溢出省略号
+
+
+hd-tabs
+    bug
+
+    优化 
+        【淦】模拟器和浏览器预览都不加dc了，为啥真机上加dc??
+        把bar放在scoll的content，减少一个mask
+        styles参数配置
+        长按label显示label
+        label溢出省略号
+        移除tab时label动画
+        翻页按钮禁用功能
+        closable可配置
+        翻页按钮可配置大小
+        支持方向属性配置
+        没必要使用bar-refer去计算坐标，有item就行了，将item的在bar.parent节点坐标求出来 - (h-H)/2就行了
+        
