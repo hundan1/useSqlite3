@@ -153,7 +153,7 @@ export default class Main extends cc.Component {
             cc.log("添加前的位置:", JSON.parse(JSON.stringify(current.position)));
 
             Array(3).fill(0).forEach((_, index) => {
-                let pos = 0;
+                let pos = 0;// 在指定索引处插入元素
                 let item = cc.instantiate(item__);
                 // item.setScale(0.5);
                 let i = index;
